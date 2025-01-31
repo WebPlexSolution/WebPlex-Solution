@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 20px 20px;
   background-color: #0f2f63;
+  border-bottom: 3px solid #ff9900; /* Stylish top border */
   align-items: center;
   position: fixed;
   top: 0;
