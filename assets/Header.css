@@ -1,0 +1,104 @@
+/* General header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: #0f2f63;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Adjust for section visibility */
+#our-services, #our-technologies, #our-features, #contact {
+  padding-top: 100px;  /* Adjust this as needed to account for fixed header height */
+}
+.logo img{
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #ff9900;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;  
+  background-color: white ;
+  border-radius: 5px;
+}
+
+
+
+/* Responsive design: Mobile-first */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3vh;
+    padding: 2vh;
+    top: 40px;
+    right: 0px;
+    background-color: #0f2f63;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-button {
+    margin-left: 0;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu-icon {
+    display: flex;
+  }
+
+  .logo img{
+    height: 25px;
+  }
+}
+
+/* For tablets and smaller screens (less than 768px) */
+@media (max-width: 480px) {
+  .nav-button {
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+}

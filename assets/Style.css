@@ -1,0 +1,474 @@
+/* Reset and Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'SourGummy';
+  src: url('../fonts/NunitoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'SourGummy';
+  background-color: aliceblue ;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Content Styles */
+.content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* General footer styling */
+.footer {
+  background-color: #0f2f63;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 3px solid #ff9900; /* Stylish top border */
+  margin-top: 10vh;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  height: 60px; /* Adjust logo size */
+}
+
+.footer-about {
+  max-width: 600px; /* Limit the width of the About Us text */
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 1vh;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer p{
+  margin-top: 1vh;
+}
+.footer-link:hover {
+  color: #ff9900; /* Change color on hover */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin-top: 2vh;
+  font-weight: lighter;
+  color: #ddd;
+}
+.footer-contact {
+  font-size: 14px;
+  margin-top: 2vh;
+  font-weight: lighter;
+  color: #ddd;
+}
+
+
+/* Modal Styles */
+.modal-content {
+  display: block;
+  overflow: hidden;
+  margin: 10% auto;
+  background-color: white;
+  max-width: 400px;
+  color: #0f2f63;
+  padding: 20px;
+  box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+
+.txtbox {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #0f2f63;
+  border-radius: 15px;
+  font-family: 'SourGummy';
+}
+
+.txtctr {
+  text-align: center;
+}
+
+.sbmt:hover {
+  color: #ff9900;
+}
+
+/* Button Styles */
+
+.modal-content label {
+  margin-right: 15px;
+}
+
+.normal-label {
+  text-decoration: none;
+  /* Removes hyperlink style */
+  color: inherit;
+  /* Inherits the parent text color */
+  cursor: default;
+  /* Makes it look like a label */
+}
+
+.normal-label:hover {
+  text-decoration: none;
+  /* Prevents underline on hover */
+  color: inherit;
+  /* Prevents color change on hover */
+}
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+.sbmt {
+  background-color: #0f2f63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  float: right;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: 'SourGummy';
+  transition: color 0.3s;
+}
+
+.text-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-header h1 {
+  font-size: 2rem;
+  color: #0f2f63;
+  margin-top: 3vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 3vh;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  border: 0;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white ;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  transform: translateY(-5px);
+  
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  mix-blend-mode:multiply;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.3em;
+  margin: 10;
+  color: #0f2f63;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #777;
+  margin-top: 2vh;
+}
+
+/* Our Features Section */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f2f63;
+  color: white;
+  padding: 40px 20px;
+  margin-bottom: 5%;
+  text-align: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.feature-item {
+  width: 18%; /* Adjusted width to accommodate better spacing */
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.feature-img {
+  width: 80px; /* Adjusted image size for better consistency */
+  height: 80px;
+  margin-bottom: 15px; /* Space between image and title */
+}
+
+.feature-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.feature-description {
+  font-size: 1em;
+  color: #d3d3d3; /* Lighter color for the description text */
+  margin-top: 7px;
+}
+
+.tech-slider-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 3vh;
+  position: relative;
+}
+
+.tech-slider {
+  display: flex;
+  width: calc(500% * 1); /* 8 original + 2 duplicates */
+  animation: slide 40s infinite linear;
+}
+
+.tech-item {
+  flex: 0 0 12.5%;
+  text-align: center;
+}
+
+.tech-img {
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  12.5% { transform: translateX(-12.5%); }
+  25% { transform: translateX(-25%); }
+  37.5% { transform: translateX(-37.5%); }
+  50% { transform: translateX(-50%); }
+  62.5% { transform: translateX(-62.5%); }
+  75% { transform: translateX(-75%); }
+  87.5% { transform: translateX(-87.5%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* When it reaches the duplicate part, reset without a visible jump */
+.tech-slider {
+  animation: slide 40s infinite linear;
+}
+
+
+
+
+/* Responsive Design */
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0f2f63;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+    margin: 40% auto ;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    /* Ensure two cards per row */
+    flex-wrap: wrap;
+    gap: 18px;
+    /* Adjust gap as needed */
+  }
+
+  .card {
+    width: 55%;
+    /* Adjust to fit two cards per row */
+  }
+
+  .card-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .features-container {
+    justify-content: center;
+  }
+
+  .feature-item {
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+
+  .feature-img {
+    width: 70px; /* Smaller image size for mobile */
+    height: 70px;
+  }
+
+  .feature-title {
+    font-size: 1.2em;
+  }
+
+  .feature-description {
+    font-size: 0.9em;
+  }
+  
+  .footer-logo-img {
+    height: 50px;
+    /* Smaller logo size for mobile */
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+    margin: 40% auto ;
+  }
+
+  .btn {
+    font-size: 0.9em;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    /* Ensure two cards per row */
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    /* Adjust to fit two cards per row */
+  }
+
+  .card-content{
+    font-size: small;
+  }
+  .card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  .feature-item {
+    width: 100%; /* Full width for mobile screens */
+    text-align: center;
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+
+  .feature-img {
+    width: 60px; /* Even smaller image for extra small screens */
+    height: 60px;
+  }
+
+  .feature-title {
+    font-size: 1.1em;
+  }
+
+  .feature-description {
+    font-size: 0.8em;
+  }
+
+  .footer{
+    margin-top: 10vh;
+  }
+
+  .footer-logo-img {
+    height: 40px;
+    /* Smaller logo size for mobile */
+  }
+
+  .footer-logo-text {
+    font-size: 20px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+}

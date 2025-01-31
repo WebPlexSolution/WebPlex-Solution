@@ -1,1 +1,120 @@
-
+/* Hero.css */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    margin: 10vh auto;
+    min-height: 20vh;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+  }
+  
+  .hero-content {
+    flex: 1;
+    text-align: center;
+  
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .hero-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0f2f63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    color: #ff9900;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: up-down 3s ease-in-out infinite;
+    max-width: 40%; /* Prevents the image from overflowing */
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes up-down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stacks content vertically */
+      text-align: center;
+      padding: 30px;
+    }
+  
+    .hero-content {
+      margin-right: 0; /* Removes unnecessary spacing */
+      margin-bottom: 20px; /* Adds spacing below the content */
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-text {
+      font-size: 1rem;
+    }
+  
+    .hero-button {
+      padding: 12px 25px;
+      font-size: 0.9rem;
+    }
+  
+    .hero-image {
+      max-width: 80%; /* Adjusts image size for smaller screens */
+      margin: 0 auto; /* Centers the image */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-text {
+      font-size: 0.9rem;
+    }
+  
+    .hero-button {
+      padding: 10px 20px;
+      font-size: 0.8rem;
+    }
+  
+    .hero-image {
+      max-width: 100%; /* Allows full-width on very small screens */
+    }
+  }
+  
